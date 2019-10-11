@@ -40,6 +40,6 @@
     enabled: true
 
 - name: install letsencrypt certificates
-  shell: "certbot certonly --dns-cloudflare --dns-cloudflare-credentials ~/nextcloud/cloudflare.ini --installer nginx --email {{ cert_email }} --non-interactive --domain *.cloudeezy.com --agree-tos {{ cert_stage|default('') }}"
+  shell: "certbot certonly --dns-cloudflare --dns-cloudflare-credentials ~/nextcloud/cloudflare.ini --installer nginx --email {{ cert_email }} --non-interactive --domain {{ fqdn }} --agree-tos {{ cert_stage|default('') }}"
   args:
     creates: /etc/letsencrypt/live/{{ fqdn }}/cert.pem
