@@ -8,14 +8,14 @@ localhost ansible_connection=local
 # fqdn       = nc.example.org
 
 # selfsigned certificate as default
-ssl_certificate_type  = 'selfsigned'
+#ssl_certificate_type  = 'selfsigned'
 
 # Letsencrypt or selfsigned certificate
-# ssl_certificate_type  = 'letsencrypt'
+ssl_certificate_type  = 'letsencrypt'
 
 
 # Your email adresse for letsencrypt
-# cert_email = nc@example.org
+cert_email = managedstack@free.fr
 
 # receive a certificate from staging
 # uncomment if you want to use letsencrypt staging environment
@@ -32,16 +32,16 @@ nc_ssl_port          = 443
 nc_datadir           = /var/nc-data
 
 # admin user
-nc_admin             = 'admin'
-nc_passwd            = ''             # leave empty to generate random password
+nc_admin             = 'cloudeezy'
+nc_passwd            = 'OID56klner'             # leave empty to generate random password
 
 # database settings
 # nc_db_type          = 'mysql'        # (MariaDB)
 nc_db_type           = 'pgsql'        # (PostgreSQL)
-nc_db_host           = 'localhost'
-nc_db                = 'nextcloud'
-nc_db_user           = 'nextcloud'
-nc_db_passwd         = ''             # leave empty to generate random password
+nc_db_host           = 'sa1079662-001.dbaas.ovh.net:35523'
+nc_db                = 'cloudeezy_cnc'
+nc_db_user           = 'cloudeezy'
+nc_db_passwd         = 'NextCl0ud'             # leave empty to generate random password
 nc_db_prefix         = 'oc_'
 
 # Nextcloud mail setup
@@ -62,7 +62,7 @@ nc_mail_smtppwd      =
 php_version          = '7.3'
 
 # Install turn server for Nextcloud Talk
-talk_install         = false
+talk_install         = true
 
 # Allways get the latest version of Nextcloud
 next_archive         = https://download.nextcloud.com/server/releases/latest.tar.bz2
@@ -83,7 +83,7 @@ restic_backup_hour:  = '3'
 
 # Install Collabra Online
 # more info about collabora office: https://www.collaboraoffice.com/
-install_collabora     = false
+install_collabora     = true
 
 # Install Online Office
 # more info about onlyoffice office: https://www.onlyoffice.com
