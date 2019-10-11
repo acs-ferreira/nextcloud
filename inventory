@@ -5,7 +5,7 @@ localhost ansible_connection=local
 
 # Server domain name
 # Default is the fqdn of the machine
-fqdn       = blur.cloudeezy.com
+fqdn       = *.cloudeezy.com
 
 # selfsigned certificate as default
 #ssl_certificate_type  = 'selfsigned'
