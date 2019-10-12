@@ -5,21 +5,7 @@ localhost ansible_connection=local
 
 # Server domain name
 # Default is the fqdn of the machine
-fqdn       = blur.cloudeezy.com
-
-# selfsigned certificate as default
-#ssl_certificate_type  = 'selfsigned'
-
-# Letsencrypt or selfsigned certificate
-ssl_certificate_type  = 'letsencrypt'
-
-
-# Your email adresse for letsencrypt
-cert_email = managedstack@free.fr
-
-# receive a certificate from staging
-# uncomment if you want to use letsencrypt staging environment
-# cert_stage = '--staging'
+#fqdn = sub.ceezy.com
 
 #
 # Nextcloud varibales
@@ -83,11 +69,11 @@ restic_backup_hour:  = '3'
 
 # Install Collabra Online
 # more info about collabora office: https://www.collaboraoffice.com/
-install_collabora     = true
+install_collabora     = false
 
 # Install Online Office
 # more info about onlyoffice office: https://www.onlyoffice.com
-install_onlyoffice    = false
+install_onlyoffice    = true
 onlyoffice_ssl_port   = 8443
 
 #
